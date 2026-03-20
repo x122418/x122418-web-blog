@@ -75,7 +75,7 @@ export default function LikeButton({ slug = 'yysuni', delay, className }: LikeBu
 		}
 	}, [slug, fetchedCount, mutate])
 
-	const count = typeof fetchedCount === 'number' ? fetchedCount : null
+	const count = 520
 
 	if (show)
 		return (
