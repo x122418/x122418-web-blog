@@ -11,13 +11,9 @@
 
 请设计并用Python实现算法，接收用户输入的金盘数目N，输出将金盘从柱子0移动到柱子2的全过程。输出格式为：move(a, x, y)，其中a为盘子编号（1～N），x和y为柱子编号（0～2），表示将盘子a从柱子x移动到柱子y。
 
-解决该问题的关键在于拆分出完成金盘移动的状态，想要完成移动，需要拆分出三大步骤
+核心代码实现如下：
 
-- 将柱子0的n-1个上方盘子移动到1
-- 将柱子0的最下方盘子移动到2
-- 将柱子1的n-1个盘子移动到2
-
-```
+```python
 def hanoi(num, source, auxiliary, target):
     if num == 1:
         print(f'move(1, {source}, {target})')
@@ -25,5 +21,16 @@ def hanoi(num, source, auxiliary, target):
         hanoi(num-1, source, target, auxiliary)
         print(f'move({num}, {source}, {target})')
         hanoi(num-1, auxiliary, source, target)
-
 ```
+
+解决该问题的关键在于拆分出完成金盘移动的状态，想要完成移动，需要拆分出三大步骤
+
+- 将柱子0的n-1个上方盘子移动到1
+- 将柱子0的最下方盘子移动到2
+- 将柱子1的n-1个盘子移动到2
+
+而这个问题有一个独特的地方在于，递归函数记录的是操作+状态，而不是仅仅有状态（用其他逻辑表示操作）
+
+hanoi函数表示，针对一个还剩余num个金盘的source柱， 利用auxiliary柱， 最终把这些金盘全都移动到target柱上。是一种概括性的描述。(也就是题目本身需要完成的叙事，我们利用以上三步骤进行了拆分）
+
+其中步骤1和3可以用hanoi函数表示，而步骤二被单独表示，而每个hanoi函数又被逐个拆分，直到num == 1条件达成。
