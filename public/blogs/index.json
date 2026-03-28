@@ -6,7 +6,7 @@
     "date": "2026-03-28T20:28",
     "summary": "虽然不是leetcode中的题目，但是算法题我就统称为leetcode了。一道基础的递归算法题，作为日志的练手...",
     "hidden": false,
-    "category": "代码实现"
+    "category": "leetcode"
   },
   {
     "slug": "computer-hardware-basics",
@@ -17,7 +17,7 @@
     "date": "2026-03-23T14:44",
     "summary": "b站看到搬运的Milen Patel手写的计算机硬件知识分享，学习之余做一点笔记",
     "hidden": false,
-    "category": "总结"
+    "category": "学习与总结"
   },
   {
     "slug": "start-of-bolg",
@@ -26,6 +26,6 @@
     "date": "2026-03-23T14:04",
     "summary": "记录大四下普通一天的心情",
     "hidden": false,
-    "category": "总结"
+    "category": "梦开始的地方"
   }
 ]
