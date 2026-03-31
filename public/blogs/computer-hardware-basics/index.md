@@ -1,8 +1,8 @@
-##计算机中的数值
+## 计算机中的数值
 
 在现代计算机中，通常采取32bit or 64bit的存储方式，但在本篇blog中，为了方便学习和演示，尽可能统一采取4bit的表示方式。
 
-###二进制补码（Two's Complement）：
+### 二进制补码（Two's Complement）：
 
 eg: 
 
@@ -14,7 +14,7 @@ $$
 
 Two's Complement 与 binary system 的不同就在于最高位的权重正负号。四位可以表示-8~+7
 
-###原码（Sign-Magnitude)与反码（One's Complement）
+### 原码（Sign-Magnitude)与反码（One's Complement）
 
 原码需要区分码位为符号位和数值位。
 - 符号位：0正1负，单独表示正负，不参与数值大小
