@@ -8,7 +8,7 @@
 | 1 | 1 | 1       |
 
 
-## OR gate
+### OR gate
 
 | A | B | Y = A+B |
 |---|---|---------|
@@ -17,7 +17,7 @@
 | 1 | 0 | 1       |
 | 1 | 1 | 1       |
 
-## XOR gate (异或）
+### XOR gate (异或）
 
 | A | B | Y = A⊕B |
 |---|---|---------|
@@ -26,14 +26,14 @@
 | 1 | 0 | 1       |
 | 1 | 1 | 0       |
 
-## NOT gate
+### NOT gate
 
 | A | Y = ¬A |
 |---|--------|
 | 0 | 1      |
 | 1 | 0      |
 
-## NAND gate  *Universal Gate*
+### NAND gate  *Universal Gate*
 
 | A | B | Y |
 |---|---|---|
