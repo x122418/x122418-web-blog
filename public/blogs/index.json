@@ -1,5 +1,16 @@
 [
   {
+    "slug": "mini-mind",
+    "title": "Minimind 架构 复习与回顾",
+    "tags": [
+      "minimind"
+    ],
+    "date": "2026-05-06T10:55",
+    "summary": "最近花了两三周的时间手写、学习了minimind的完整代码，做一点复习与总结",
+    "hidden": false,
+    "category": "学习与总结"
+  },
+  {
     "slug": "logic-gates",
     "title": "计算机底层知识学习 - logic gates",
     "tags": [
